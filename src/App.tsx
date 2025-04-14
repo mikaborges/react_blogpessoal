@@ -11,7 +11,7 @@ import FormTema from './components/navbar/temas/formtema/FormTema'
 import DeletarTema from './components/navbar/temas/deletartemas/DeletarTema'
 import ListaPostagens from './components/postagens/cardpostagens/listapostagens/ListaPostagens'
 import FormPostagem from './components/postagens/formpostagem/FormPostagem'
-import DeletarPostagem from './components/navbar/temas/deletarpostagem/DeletarPostagem'
+import DeletarPostagem from './components/postagens/deletarpostagem/DeletarPostagem'
 
 
 
