@@ -1,10 +1,10 @@
 import { ChangeEvent, useContext, useEffect, useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import { useNavigate, useParams } from "react-router-dom";
-import { AuthContext } from "../../../../contexts/AuthContext";
-import Tema from "../../../../models/Tema";
-import { atualizar, buscar, cadastrar } from "../../../../services/Service";
-import { ToastAlerta } from "../../../../utils/ToastAlerta";
+import { AuthContext } from "../../../contexts/AuthContext";
+import Tema from "../../../models/Tema";
+import { atualizar, buscar, cadastrar } from "../../../services/Service";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 
 function FormTema() {
@@ -69,7 +69,7 @@ function FormTema() {
                 if (error.toString().includes('403')) {
                     handleLogout();
                 } else {
-                    alert('Erro ao atualizar o tema.')
+                    ToastAlerta('Erro ao atualizar o tema!', "erro")
                 }
 
             }
@@ -83,7 +83,8 @@ function FormTema() {
                 if (error.toString().includes('403')) {
                     handleLogout();
                 } else {
-                    alert('Erro ao cadastrar o tema.')
+                    ToastAlerta('Erro ao cadastrar o tema.', "erro")
+                    
                 }
 
             }

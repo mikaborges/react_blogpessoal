@@ -1,10 +1,10 @@
 import { useState, useContext, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { RotatingLines } from "react-loader-spinner"
-import { AuthContext } from "../../../../contexts/AuthContext"
-import Tema from "../../../../models/Tema"
-import { buscar, deletar } from "../../../../services/Service"
-import { ToastAlerta } from "../../../../utils/ToastAlerta"
+import { AuthContext } from "../../../contexts/AuthContext"
+import Tema from "../../../models/Tema"
+import { buscar, deletar } from "../../../services/Service"
+import { ToastAlerta } from "../../../utils/ToastAlerta"
 
 function DeletarTema() {
 
